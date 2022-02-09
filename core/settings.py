@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-9v8yd6qz+2^#yeo^xb2+_n2gggr_9rlh0mco7uy)f5+d%223e#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1", "192.168.0.4", "localhost"]
 
 
 # Application definition
@@ -96,7 +96,7 @@ DATABASES = {
     }
 }
 
-DATABASE_ROUTERS = ['user.router.AuthRouter',]
+DATABASE_ROUTERS = ['user.router.AuthRouter', 'listing.router.ListingRouter']
 
 
 # Password validation
